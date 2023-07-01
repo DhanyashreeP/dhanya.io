@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dhanya</title>
+    <script>
+        function showdate()
+        {
+            var d=new Date();
+            var h=d.getHours();
+            var m=d.getMinutes();
+            var s=d.getSeconds();
+            document.getElementById("time").innerHTML=(h+":"+m+":"+s);
+            setTimeout(showdate,1000);
+        }
+    </script>    
+</head>
+<body onload="showdate()">
+  <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="education.html">Education and Hobbies</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    </body>
+    <div id="time"></div>
+    <?php
+    date_default_timezone_set("Asia/kolkata");
+    echo " ".date("h:i:sa");
+    
+    ?>
+  <div id="home" class="container">
+    <div class="card">
+        <div class="left-container">
+    <img src="profile.jpeg" alt="Profile Image">
+    <h2 class="gradienttext">Dhanyashree</h2>
+    <p>Engineering Student</p>
+  </div>
+  <div class="right-container">
+    <h3 class="gradienttext">Profile Details</h3>
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td>Dhanyashree</td>
+          </tr>
+      <tr>
+        <td>Age :</td>
+        <td>XX</td>
+      </tr>
+      <tr>
+        <td>Mobile :</td>
+        <td>+91 XXXXXXXXXX</td>
+      </tr>
+      <tr>
+        <td>Email :</td>
+        <td>abc@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Address :</td>
+        <td>XXXXXXX</td>
+      </tr>
+    </table>
+    <div class="credit">Made by Dhanya</div>
+  </div>
+
+    </div>
+    </div>
+</body>
+</html>
